@@ -90,6 +90,10 @@ img{
  h1:active a {
   color: var(--Yellow);
  }
+ a:focus{
+  outline: 2px dashed var(--Gray950);
+  outline-offset: 4px;
+ }
  .para{
   color: var(--Gray500);
   font-size: 1rem;
