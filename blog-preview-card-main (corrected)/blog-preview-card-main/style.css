@@ -1,0 +1,123 @@
+/* common CSS */
+*, *::after, *::before{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+:root{
+  --Yellow: hsl(47, 88%, 63%);
+
+--White: hsl(0, 0%, 100%);
+
+--Gray500: hsl(0, 0%, 42%);
+--Gray950: hsl(0, 0%, 7%);
+
+}
+html,body{
+ height: 100%;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+body{
+  font-family:"Figtree", sans-serif ;
+  background-color: var(--Yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ width: 100%;
+
+}
+
+/* main_blog style */
+.main_blog{
+  width: 23rem;
+  background-color: var(--White);
+  padding: 1rem;
+  border-radius: 0.950rem;
+  box-shadow: 7px 7px 0 var(--Gray950);
+  border: 1px solid var(--Gray950);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.main_blog:hover{
+ transform:translateY(-5px);
+ box-shadow: 10px 10px 0 var(--Gray950);
+}
+
+/* image_comtainer style */
+.image_comtainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog_image{
+  margin-bottom: 0.90rem;
+  border-radius: 0.700rem;
+  display: block;
+}
+
+/* content_container style */
+.content_container{
+  text-align: left;
+}
+.intro{
+  background-color: var(--Yellow);
+  font-weight: 700;
+  font-size:1rem;
+  width: fit-content;
+  color: var(--Gray950);
+  border-radius: 0.350rem;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 0.80rem;
+}
+.time{
+  font-size: clamp(0.9rem, 1.5vw, 0.9rem);
+  font-weight: 500;
+  color: var(--Gray950);
+  margin-bottom: 0.80rem;
+}
+.title{
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 800;
+  margin-bottom: 0.7rem;
+}
+.title a{
+  text-decoration: none;
+  color: var(--Gray950);
+  transition: 0.5s;
+
+}
+ h1:hover a,
+ h1:focus a{
+  color: var(--Yellow);
+}
+.para{
+ font-weight: 500;
+ font-size: 1rem;
+ color: var(--Gray500);
+ line-height: 1.5rem;
+}
+
+.image_avater_container{
+ display: flex;
+ gap: 10px;
+ align-items: center;
+ margin-top: 0.8rem;
+}
+.avater{
+  width: 1.7rem;
+}
+.name{
+ color: var(--Gray950);
+ font-weight: 600;
+ text-align: center;
+}
+
+
+@media screen and (max-width: 420px){
+  .main_blog{
+    padding: 0.6rem;
+  }
+}
